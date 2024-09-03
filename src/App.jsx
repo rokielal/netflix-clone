@@ -1,7 +1,13 @@
 import React from "react";
 import "./index.css";
+import Body from "./components/Body";
+import { BrowserRouter } from "react-router-dom";
 const App = () => {
-  return <div className="text-2xl font-bold">App</div>;
+  return (
+    <BrowserRouter>
+      <Body />
+    </BrowserRouter>
+  );
 };
 
 export default App;
